@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.cranberrygame.test1" version="1.0.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.happydigital.myapp" version="1.0.0.0">
 
-	<name>New project</name>
-	<description>example</description>
-	<author>cranberry</author>
+	<name>Casting pentru noul star glossi</name>
+	<description>Casting pentru noul star glossy</description>
+	<author href="http://happydigital.ro" email="dani@behappydigital.com">HappyDigital</author>
 
 	<icon src="icon-128.png" width="128" height="128" />
 	<icon src="icon-256.png" width="256" height="256" gap:role="default" />
