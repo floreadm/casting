@@ -22,7 +22,7 @@
 	<preference name="target-device" value="landscape" />
 
 	<gap:plugin name="org.apache.cordova.camera" version="0.2.9" />
-	<gap:plugin name="org.apache.cordova.file-transfer" version="0.3.0" />
+	<gap:plugin name="org.apache.cordova.file" version="1.0.1" />
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 
 	<!-- Optional splash screen image, e.g.: -->
