@@ -79,10 +79,14 @@
 			return path;
 		}
 		
+		function fail() {
+			return "cdvfile://localhost/persistent/";
+		}
+		
 		function gotFS(fileSystem) { 
 			var cacheFolderSubPath = "Android/data/com.happydigital.myapp/casting/photos/";
 			var nturl = fileSystem.root.toNativeURL();
-			var path = window.resolveLocalFileSystemURL(nturl+cacheFolderSubPath, onResolveSuccess, onResolveFail);
+			var path = window.resolveLocalFileSystemURL(nturl+cacheFolderSubPath, onResolveSuccess, fail);
 			return path;
 		}
 		
