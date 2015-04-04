@@ -71,6 +71,30 @@
 	<script src="c2runtime.js"></script>
 
     <script>
+		function upload(imageURI) {
+			var imageURI = "cdvfile://localhost/persistent/Android/data/com.happydigital.myapp/casting/photos/photo_110405466.874552.jpg";
+			var options = new FileUploadOptions();
+			options.fileKey = "uploadfile";
+			options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
+			options.mimeType = "image/jpeg";
+			var params = new Object();
+			options.params = params;
+			options.chunkedMode = false;
+			var ft = new FileTransfer();
+			ft.upload(imageURI, "http://beautyhub.wwwiew.com/ajax/save_image", win, fail,
+				options);
+		}
+		 
+		function win(r) {
+			return "ok - local"";
+		}
+		 
+		function fail(error) {
+			return "not ok - local";
+		}
+		
+		
+		
 		
 		jQuery(window).resize(function() {
 			cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
