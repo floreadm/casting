@@ -72,31 +72,6 @@
 
     <script>
 		
-
-		function getPath() {
-			alert(LocalFileSystem.PERSISTENT);		
-			var path = window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail); 
-			return path;
-		}
-		
-		function fail() {
-			return "cdvfile://localhost/persistent/";
-		}
-		
-		function gotFS(fileSystem) { 
-			var cacheFolderSubPath = "Android/data/com.happydigital.myapp/casting/photos/";
-			var nturl = fileSystem.root.toNativeURL();
-			var path = window.resolveLocalFileSystemURL(nturl+cacheFolderSubPath, onResolveSuccess, fail);
-			return path;
-		}
-		
-		function onResolveSuccess(fileEntry){
-			var appCachePath = fileEntry.toNativeURL()+"/";
-			return appCachePath;
-		}
-
-		
-	
 		jQuery(window).resize(function() {
 			cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
 		});
